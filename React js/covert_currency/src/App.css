@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.inputvalue{
+  width: 10em;
+  border: 2px solid #333;
+  border-radius: .5em;
+  padding: .25rem;
+}
+
+select{
+  margin-left: .8em;
+  width: 5em;
+  border: 1px solid #333;
+  border-radius: .5em; 
+  padding: .25rem;
+}
+
+.equals{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* http://api.exchangeratesapi.io/v1/latest?access_key=51a261f6fcba097d5d5e90e70d8d3712 */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Alignment
+</title>
+
+<head>
+ <style> 
+    *{
+     box-sizing: border-box;  
+    }
+    .container{
+      border: 3px solid black;
+      width: 500px;
+      background-color: rgb(228, 74, 81);
+      margin: 50px auto;
+    }
+    .student{
+      border: 3px solid gray;
+      margin: 5px 5px;
+      padding: 5px 50px;
+      background-color: rgb(238, 225, 181);
+      border-radius: 50px;
+    }
+    #student1{
+        float:left;
+        width: 50%;
+    }
+    #student2{
+        float:left;
+        width: 50%;
+    }
+    #student3{
+        /*float: right;*/
+       clear:both;
+       
+    }
+    p{
+        /*text-align:right;
+        text-align:left;
+        text-align:center;*/
+        text-align:justify;
+    }
+    h1{
+       text-align: center;
+       margin: 20px 20px;
+       color: blue;
+       background-color: burlywood;
+       border: 3px solid black;
+    }
+ </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to student class.</h1>
+     
+        <div id="student1" class="student">
+            <h3>This is student class</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates id minima quas praesentium libero? Aliquid asperiores, est eaque fuga numquam consequuntur ab. Amet nemo neque commodi quod saepe ratione!
+            </p>
+        </div>
+        <div id="student2" class="student">
+            <h3>This is student class</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates id minima quas praesentium libero? Aliquid asperiores, est eaque fuga numquam consequuntur ab. Amet nemo neque commodi quod saepe ratione!
+            </p>
+        </div>
+        <div id="student3" class="student">
+            <h3>This is student class</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates id minima quas praesentium libero? Aliquid asperiores, est eaque fuga numquam consequuntur ab. Amet nemo neque commodi quod saepe ratione!
+            </p>
+        </div>
+
+        <div id="student4" class="student">
+            <h3>This is student class</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates id minima quas praesentium libero? Aliquid asperiores, est eaque fuga numquam consequuntur ab. Amet nemo neque commodi quod saepe ratione!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

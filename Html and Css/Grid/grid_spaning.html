@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Span</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        /* grid-template-rows: repeat(5, auto); */
+        grid-gap: 5px;
+      }
+      .item {
+        background-color: seashell;
+        border: 2px solid burlywood;
+      }
+      .item:first-child {
+        /* grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5; */
+        /* grid-column: 1 / span 3;
+        grid-row: 1 / span 15; */
+      }
+
+      @media only screen and (max-width : 500px)  {
+        .container {
+        grid-template-columns: repeat(4, auto);
+      }
+      }
+      @media only screen and (max-width : 450px)  {
+        .container {
+        grid-template-columns: repeat(3, auto);
+      }
+      }
+      @media only screen and (max-width : 350px)  {
+        .container {
+        grid-template-columns: repeat(2, auto);
+      }
+      }
+      @media only screen and (max-width : 300px)  {
+        .container {
+        grid-template-columns: repeat(1, auto);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">this is box-1</div>
+      <div class="item">this is box-2</div>
+      <div class="item">this is box-3</div>
+      <div class="item">this is box-4</div>
+      <div class="item">this is box-5</div>
+      <div class="item">this is box-6</div>
+      <div class="item">this is box-7</div>
+      <div class="item">this is box-8</div>
+      <div class="item">this is box-9</div>
+      <div class="item">this is box-10</div>
+    </div>
+  </body>
+</html>

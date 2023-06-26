@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance properties in css</title>
+    <style>
+        body{
+            text-align: center;
+        }
+      img{
+          width:25%;
+        }
+        /*To give various shapes to img: 
+        Google-cilp path generator*/
+        .clipPath-po{
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        }
+        .clipPath-circle{
+            clip-path: circle(50% at 50% 50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img class="clipPath-circle" src="../video/Snapchat-828889008.jpg" alt="prerna">
+    </div>
+</body>
+</html>

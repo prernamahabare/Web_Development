@@ -1,0 +1,19 @@
+{
+  "name": "express_module",
+  "version": "1.0.0",
+  "description": "we learn express module and npm ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "prerna"
+  ],
+  "author": "prerna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}

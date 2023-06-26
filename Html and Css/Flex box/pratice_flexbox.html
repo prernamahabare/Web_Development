@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <style>
+        body {
+            max-height: 100vh;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        header {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            min-height: 60vh;
+            flex-direction: row;
+        }
+
+        .container>article {
+            flex: 4;
+            background-color: rgb(148, 240, 202);
+        }
+
+        nav {
+            flex: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0 px;
+        }
+
+        nav ul li  {
+            margin: 5px 5px;
+            padding: 4px 4px;   
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        header,
+        footer {
+            background: yellowgreen;
+            height: 20vh;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(184, 218, 210);
+
+           
+        }
+
+        header,
+        footer,
+        article {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>My Introduction</header>
+    <div class="container">
+        <article class="article">
+            <img style="width: 150px; float: left; margin: 15px;" src="../video/Snapchat-828889008.jpg">
+            <p style="display:flex; text-align: center;">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                alias fugiat? Eaque vel deleniti temporibus magnam, quia aliquam provident, iure excepturi soluta
+                dolores tenetur quae corrupti doloribus ratione placeat consequatur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi fugit enim velit
+                perferendis distinctio, voluptatum, ratione aut consectetur quisquam deserunt nam? Deserunt nulla, ad
+                suscipit autem exercitationem dolores modi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et ullam itaque delectus cumque quisquam
+                tempora exercitationem quaerat distinctio hic atque commodi, nesciunt autem, eius deserunt totam rem
+                consequuntur quam!</h4>
+            </p>
+        </article>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Conatct us</a></li>
+                <li> <a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer> <a href="https://www.apple.com/in/app-store/"><img style="float: right;margin: 5px;" src="../video/app1.png"
+                width="10%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://play.google.com/store/apps"><img style="float: right;margin: 5px;" src="../video/app2.png"
+                width="10%"></a>
+        <p>
+        <h3>Copyright 2020-2021 by Refsnes Data. All Rights Reserved.
+
+        </h3>
+        </p>
+    </footer>
+</body>
+
+</html>

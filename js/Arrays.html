@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <script>
+        //Types of variables
+        let myVar1 = 12;
+        let myVar2 = 2.4;
+        let myVar3 = "Yash";
+        let myVar4 = true;
+        let myVar5 = null;
+        let myVar6 = undefined;
+
+        //key value pair object
+        let employee = {
+            name: "Yashodhar",
+            age: 18,
+            "Date of Birth": "12/07/2003" //We have to use " " if there is a spacing in a key
+        };
+        console.log(employee);
+        console.log(employee.name);
+        console.log(employee['Date of Birth']); //We have to use [' '] if there is a spacing in a key
+
+        //Arrays
+        let anything = [12, 2.4, "Yash", null];
+        anything.push("This is pushed");
+        console.log(anything);
+        console.log(anything.length);
+        console.log(anything[2]);
+
+        let marks = [12, 34, 1, 34, 45, 23, 12, 56, 43, 89, 67];
+        console.log(marks);
+        marks.sort();
+        console.log(marks);
+        
+        let ar = new Array(2, 34, 12, "Yash"); // Make an array using new keyword
+        console.log(ar);
+
+        let arr = new Array(23); //Declared the array of length 23
+        console.log(arr.length);
+    </script>
+</body>
+</html>

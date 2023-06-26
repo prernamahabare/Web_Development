@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+
+setInterval(Update, 1000);
+
+function Update() {
+    let newdate = new Date();
+    let mn = newdate.getMinutes();
+    let sc = newdate.getSeconds();
+
+    sc.reverse();
+    
+
+    document.getElementById('demo1').innerHTML = `${mn}:${sc}` ;
+
+}
+
+
+
+</script>
+
+</body>
+</html>

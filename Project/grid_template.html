@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            margin: 0px;
+        }
+        @media screen and (max-width:400px) {
+            body {
+                background-color: yellow;
+            }
+            #head,{
+                background-color: rgb(100, 137, 204);
+            }
+            aside{
+               display: none;
+           }
+        }
+        @media screen and (min-width:400px) and (max-width:600px) {
+            body {
+                background-color: red;
+            }
+            #head{
+                background-color: rgb(215, 233, 151);
+            }
+           aside{
+               display: none;
+           }
+        }
+        @media screen and (min-width:600px) and (max-width:800px) {
+            body {
+                background-color: green;
+            }
+            #head{
+                background-color: rgb(142, 218, 231);
+            }
+           
+        }
+        
+        .container{
+            display: grid;
+            grid-gap: 5px;
+            /* A row should contain the same number of columns in grid-template-areas */
+            grid-template-areas:
+            'head head head' 
+            'navbar navbar navbar'
+            'aside main main'
+            'footer footer footer';
+        }
+        .item{
+         background-color:linen ;
+         border: 2px solid black;
+         padding: 18px 18px;
+        }
+        #head{
+            grid-area: head;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #main{
+          grid-area: main;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header id="head" class="item">Prerna</header>
+    <nav id="navbar" class="item">Home About Us Contact Us</nav>
+    <aside id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas repudiandae assumenda molestias nisi ab voluptatibus, fugiat nemo esse. Dignissimos, error pariatur? Fugiat inventore architecto quaerat deleniti quasi quia dolorum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod tenetur enim repellat eos? Repudiandae nobis hic laboriosam eligendi soluta explicabo sint quia cumque! Voluptatum eaque, corrupti distinctio aliquam delectus atque possimus porro in aliquid, nam aperiam. Aspernatur iure illum sed possimus alias quae earum praesentium, labore molestiae laboriosam eos laudantium cum delectus illo nesciunt quaerat dicta? Molestias quaerat ipsum magnam beatae explicabo nesciunt minus corrupti deleniti nobis aliquam. Ipsa molestiae cumque, culpa accusamus facilis blanditiis commodi corrupti quos inventore modi dignissimos, maiores illo eos odit nam optio itaque, maxime deleniti nostrum placeat? Sequi, non. Culpa quis aperiam iusto quae!
+    </aside>
+    <main id="main" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia sed quis ut, laboriosam tenetur deleniti quibusdam esse numquam eum eaque placeat itaque. Alias dolore eligendi adipisci, illo quo ratione consectetur incidunt autem non facere labore nulla. Modi nobis similique expedita molestiae hic aut assumenda adipisci esse ipsam, earum consequatur dolore, alias aperiam. Magni laboriosam in itaque quod consequuntur aperiam doloribus minima, fugit veritatis iusto est fuga pariatur dolor eaque molestiae rerum earum, modi adipisci, quia tempore reiciendis velit harum! Asperiores, labore animi quo ab pariatur facere alias maiores, et iure dolores ipsa earum ea vel quod tenetur velit saepe accusantium maxime qui nobis reiciendis quibusdam itaque ducimus perspiciatis. Quod, blanditiis atque. In ut repellat perferendis, culpa ab reprehenderit saepe consequatur enim, vero vel doloribus accusantium molestiae repudiandae ipsa porro quos quam non alias quidem nihil veniam, illo voluptatibus fugiat! Dicta obcaecati aperiam repellendus, repudiandae adipisci ipsum dolore, ratione vero ex reiciendis impedit eaque maiores qui rem, neque quae tenetur! Corporis sit laudantium illo tempora a omnis. Ipsum iusto hic necessitatibus obcaecati dignissimos, nisi provident aliquid veritatis ea explicabo cumque a odio tenetur vitae dolor minus beatae nesciunt distinctio doloremque sapiente! Libero reiciendis suscipit dolores distinctio vero quo molestias, inventore quibusdam vel facilis laborum minima! Nihil, dicta! Optio, iste possimus? Unde dolorum id aliquid sunt enim ipsum, earum deleniti modi praesentium! Aut ad earum, incidunt eos ipsam cupiditate voluptatum. Aliquid neque ut non ab. Eius quis veniam delectus illum quam vitae rerum ipsum laudantium dolore velit? Dolorum ullam aspernatur perspiciatis rem officiis praesentium illum nobis provident facere ea laboriosam quos assumenda saepe et, veritatis repudiandae ex nostrum voluptas placeat? Inventore a nesciunt beatae reiciendis ut nobis provident distinctio sequi ex cumque repellat veniam sunt fugit deleniti fugiat ducimus adipisci, possimus voluptatum ipsam excepturi! Impedit modi consequuntur neque magnam sunt perferendis?</main>
+    <footer id="footer" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae consequatur modi minima accusamus est, velit vitae eius! Aspernatur sapiente, consequatur illo nihil laudantium beatae reprehenderit nulla cum animi rerum enim.</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | String and String meathods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, necessitatibus vero? Accusantium,
+            architecto quos veniam cumque numquam suscipit quod placeat, nesciunt nihil velit consequatur optio
+            cupiditate obcaecati? Doloremque, magnam neque.</p>
+    </div>
+
+    <script>
+        // There are 3 ways to write a string in js
+        var str1 = "thi's";  // This meathod is used when we have to use a single quotes in the string
+        var str2 = 'thi"s';  // This meathod is used when we have to use a double quotes in the string
+        var str3 = `th'i"s`;  // This meathod is used when we have to use both single and double quotes in the string
+
+        //console.log(str1 + str2 + str3);
+ 
+        var name = "Yashodhar";
+        var dob = "12/07/2003";
+
+        //This is called as template literal and it used to merge string and used within only ` `
+        var temp = `${name} is a good boy and he was born on ${dob}`;
+        console.log(temp);
+
+        //length of a string
+        var len = name.length;
+        console.log(len);
+
+        //String using constructor
+        var s = new String("this");
+        console.log(s);
+
+        /*String Functions*/
+        console.log("\nStirng Functions");
+
+        var str = "This is a string";
+        console.log(str);
+
+        // Function to find or to locate the position of any word or a substring in a string
+        // Returns first Occurence of a substring
+        var pos1 = str.indexOf("is");
+        console.log(pos1);
+
+        // Returns last Occurence of a substring
+        var pos2 = str.lastIndexOf("is");
+        console.log(pos2);
+
+        //Functions to get a substring from a string
+        var substr1 = str.slice(1, 6);
+        console.log(substr1);
+
+        var substr2 = str.substring(1, 6); //Difference between slice() and substring() is that the slice() can take negative values also.
+        console.log(substr2);
+
+        var substr3 = str.substr(1, 3); //This function takes a parameter as a starting index of substring and then the no of characters you want to print.
+        console.log(substr3);
+
+        //Function to replace a string
+        var replaced = str.replace("string", "yashodhar");
+        console.log(str); // string 'str' will not get changed it will remain same.
+        console.log(replaced);
+
+        //Funtion to convert the letters of string to uppercase and lowercase
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str);
+
+        //Function to concat any two strings
+        var NewString = str.concat("New String"); // It can be also done by '+'
+        console.log(NewString);
+
+        //Function to remove WhiteSpaces
+        var strWithWhitespaces = "   this contains        whitespaces   ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim()); //trim() will remove all the white spaces before and after the string
+
+        //Function to extract any character from the string
+        var ch = str.charAt(2);
+        console.log(ch);
+
+        console.log(str[2]);
+    </script>
+</body>
+
+</html>

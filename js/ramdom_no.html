@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+
+<body>
+    <button id="btn" onclick="hideshow()">PLAY</button>
+
+    <div id="para">hey</div>
+
+    <script>
+
+        function random(r){
+            let a = 1;
+            let b = 6;
+            r = a + (b - a) * Math.random();
+           return Math.round(r);
+        }
+        document.getElementById('para').innerHTML = random(0);
+
+
+
+        //   let para = document.getElementById('para');
+        //   para.innerHTML= console.log("The random number is "+ Math.round(r));
+
+        function hideshow() {
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none'
+            }
+            else {
+                para.style.display = 'block'
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

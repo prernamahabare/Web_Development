@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;  
+    padding: 10px; 
+}
+
+header h1 {
+    color: #50a2ee;
+    font-family: 'Special Elite', cursive;
+    font-size: 60px;
+    float: left;
+    width: 50%;
+}
+
+.nav{
+    background-color:lightgrey;
+    overflow: hidden;
+    margin-top: 10vw;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav a{
+    background-color:lightgrey;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav a:hover{
+    background-color: white;
+} 
+
+.nav .highlight{
+    background-color: white;
+}
+
+.firstsection{
+    padding: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background{
+    background-image: url("https://lirp-cdn.multiscreensite.com/da0c5ccc/dms3rep/multi/opt/XP__0012-1-23194a12-fdc34ea1-1392d1db-1920w.jpg");
+    background-repeat: no-repeat;
+    background-size: 1550px;
+    height: 753px;
+    background-attachment: fixed;
+}
+
+.transbox{
+    background-color: rgb(0, 0, 0, 0.6);
+    padding-top: 0.1mm;
+    padding-bottom: 0.1mm;
+    margin-top: 10%;
+    border-left: 3px solid #50a2ee;
+    border-right: 3px solid #50a2ee;
+}
+
+.transbox p{
+    color: rgb(255, 255, 255);
+    margin: 5%;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.button{
+    background-color: #50a2ee;
+    width: 40%;
+    height: 50px;
+    border: none;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: #50a2ee;
+    opacity: 0.8;
+    border: none;
+}
+
+.secondsec, .fourthsec{
+    background-color: rgba(245, 245, 245, 0.829);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.para {
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 15px;
+}
+
+.thirdsec{
+    background-image: url("https://lirp-cdn.multiscreensite.com/da0c5ccc/dms3rep/multi/opt/Crossfit+Cartel-003-1920w.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 425px;
+}
+
+.content{
+    background-color: rgba(245, 245, 245, 0.925);
+    padding: 4%;
+    border: 14px solid white;
+}
+
+.text{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.801);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.para2{
+    margin: 1%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 15px;
+}
+
+.fifthsec{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2.1%;
+    margin-bottom: 3%;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook  {
+    color: #3B5998;
+}
+
+.fa-twitter{
+    color: #55ACEE;
+}
+.fa-linkedin{
+    color: #007bb5;
+}
+
+.fa-youtube{
+    color: #bb0000;
+}
+
+.call{
+    text-align: center;
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: lightgrey;
+    margin-top: 3.2%;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0);
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+
+.ullist1, .ullist2, .ullist3, .ullist4{
+    color: #50a2eec9;
+    list-style-type: none;
+    line-height: 130%;
+    text-align: left;
+}
+
+.ullist1 a:hover, .ullist2 a:hover, .ullist3 a:hover, .ullist4 a:hover{
+    color: white;
+}
+
+.ullist1{
+    float: left;
+    width:250px;
+    padding-left: 100px;
+}
+
+.ullist2{
+    float: left;
+    width:200px;
+
+}
+
+.ullist3{
+    float: left;
+    width: 250px;
+}
+
+.ullist4{
+    float: left;
+    width: 250px;
+}
+
+.lastsec a{
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.icon a:hover{
+    color: white;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 14px;
+    font-weight: 100;
+    float: left;
+    width: 350px;
+    padding-left: 80px;
+    line-height: 80%;
+}
+
+.copyright a{
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 14px;
+    font-weight: 100; 
+    text-decoration: none; 
+    padding-left: 12px;
+}
+
+.copyright a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.icons a:hover{
+    color: white;
+}

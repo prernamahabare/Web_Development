@@ -1,0 +1,59 @@
+div{
+   max-width: 300px;
+    margin: 10px auto;
+    border: 2px solid rgb(151, 151, 151);
+    padding:20px;
+    text-align: center;
+    background-color: white(240, 240, 240);
+}
+body{
+    height: 100%;
+    max-width:800px;
+    margin: auto;
+}
+img{
+    width: 20px;
+}
+
+input[type ="text"],
+input[type ="password"]{
+    margin: 1px;
+    padding:5px;
+    width: 95%;
+   
+}
+button{
+    border-radius: 4px;
+    text-align: center;
+    width:100%;
+    background-color: rgb(165, 195, 236);
+    margin: 1px;
+    padding:6px;
+}
+h1{
+    text-align: center;
+    font-family: 'Grand Hotel', cursive;
+}
+
+a{
+   
+    text-decoration: none;  
+}
+#one{
+    max-width: 300px;
+    margin:auto;
+    border: 2px solid  rgb(151, 151, 151);
+    padding:20px;
+  
+}
+.an .ao{
+    margin: 2px;
+   
+}
+footer{
+    max-width: 300px;
+    margin:5px auto ;
+    text-align: center; 
+    padding: 2px;  
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .conatiner {
+            background-color: burlywood;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: 2px soild green;
+            margin: 0px 20px;
+            padding: 5px;
+            position: relative;
+
+            /* animation-name: harry1;
+            animation-name: harry2;
+            animation-duration: 8s;
+            animation-iteration-count: 1; */
+            
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            animation: prerna 10s ease-in-out 1s 3 forwards;
+        }
+
+        /* @keyframes prerna {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        } */
+
+        @keyframes prerna {
+            0% {
+                top: 5px;
+                left: 0;
+            }
+
+            25% {
+                top: 350px;
+                left: 0;
+            }
+
+            50% {
+                top: 350px;
+                left: 1040px;
+            }
+
+            75% {
+                top: 5px;
+                left: 1040px;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="box">
+            Box1
+        </div>
+    </div>
+</body>
+
+</html>

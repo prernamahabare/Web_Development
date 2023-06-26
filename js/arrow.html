@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="contanier">
+        This is a container.
+    </div>
+
+    <script>
+
+        //   function greet(){
+        //       console.log("hey prerna")
+        //   }
+        //   greet();
+
+        // we can write this function using shortcut called arrow function.
+        //   let greet = () => {
+        //       console.log("hey prerna");
+        //   }
+        //   greet();
+
+        //we can use braces or not that will be dependend upon us.
+
+        let greet = () => console.log("hey prerna");
+        greet();
+
+        //With the help of arrow functions, it is not necessary to define the whole function and its components. We will get the output after 5 seconds in webpage.
+
+        // setTimeout(() => {
+        //     console.log("we are inside settimeout.")
+        // }, 5000);
+
+        //function mul(a,b){
+        //     return a * b;
+        // }
+
+        //We can also simply any function with the arrow functions-
+
+        //let mul = (a, b) => a * b;
+
+        //If we have any single variable in our code, then we don’t need to put any braces also. The example for this is as follows-
+
+        //let half = a => a / 2;
+
+        //Now let us see the use of lexical this with the help of an example. If we make the object obj and an array of names and then make a function as speak which does the following task as follows-
+
+        // let obj = {
+        //     students: ["prerna", "yashodhar", "sneha", "abhishek"],
+        //     marks() {
+        //         this.students.forEach((name) => {
+        //             console.log("your score is really very good " + name);
+        //         });
+        //     }
+        // }
+
+        // obj.marks();
+
+        // the above example, we have made a marks function, add a forEach() loop to it, and then added an arrow function. But if we add a variable greeting and add this.greeting inside the console.log as follows.
+
+        //This variable is normally used to point the variable inside the function. But in the case of arrow functions, it points the variable outside the function. This is known as lexical this. 
+
+        //that means if this.greeting is not found in the present function then in the normal function undenfinded is comes in output.but, in the case of arrow function this will not happens if this.grreting is not found in the present function then it finds the function in the parent element means outside of the function. 
+
+        let obj = {
+            greeting : "All the best for next exam.",
+            students: ["prerna", "yashodhar", "sneha", "abhishek"],
+            marks() {
+                this.students.forEach((name) => {
+                    console.log("your score is really very good " + name + "! " + this.greeting);
+                });
+            }
+        }
+
+        obj.marks();
+
+
+        // let obj1 = {
+        //     names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        //     speak() {
+        //         this.names.forEach((student) => {
+        //             console.log("Kukdoo Koo " + student);
+        //         });
+        //     }
+        // }
+        // obj1.speak();
+
+
+
+    </script>
+
+</body>
+
+</html>

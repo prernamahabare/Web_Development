@@ -1,0 +1,29 @@
+/*  used in cssfile
+p{
+    color: purple;
+    background-color: yellowgreen ;
+}*/
+/* used in selectors file
+element selector--*/
+p {
+    color: black;
+    background-color: red;
+}
+
+/*id selector*/
+/* symbol of id= " # "   */
+#firstpara {
+    color: greenyellow;
+    background-color: blue;
+}
+
+/* class selectors*/
+/* symbol of class=" . "   */
+.bgyellow {
+    color: yellow;
+    background-color: skyblue;
+}
+/*Grouping selector*/
+footer,span {
+  background-color: pink;
+}

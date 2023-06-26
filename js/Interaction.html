@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <script>
+        //Alert - Does not return anything
+        // alert("This is a message");
+
+        //Prompt - Returns a value entered by user
+        //prompt("Enter your name", "");
+
+        //Confirm - Returns a boolen value
+        // confirm("Do you want to exit?");
+        //_______________________________________________________________________________________//
+        
+        //Display a greet message using prompt and alert
+        let name = prompt("Enter your name", "Guest");
+        alert(`Good Morning, ${name}`);
+        //_______________________________________________________________________________________//
+        
+        //Club entry checker using prompt and alert
+        let age = prompt("Enter your age", "");
+        if(age>=18){
+            alert("Welcome to the club");
+        }
+        else{
+            alert("Entry Denied!!, You must be 18 or above");
+        }
+        //_______________________________________________________________________________________//
+
+        //Add two numbers using prompt and display using alert
+        function add(n1, n2){
+            return n1+n2;
+        }
+
+        let num1 = prompt("Enter num1", "");
+        let num2 = prompt("Enter num2", "");
+        let a = parseInt(num1);
+        let b = parseInt(num2);
+        alert(`Result of ${num1} + ${num2} is ${add(a, b)}`);
+        //_______________________________________________________________________________________//
+
+        //Delete post by using confirm
+        let deletepost = confirm("Do you really want to delete post?");
+        //console.log(deletepost);
+        if(deletepost){
+            alert("Post Deleted Sucessfully");
+        }
+        else{
+            alert("Your post has not been deleted");
+        }
+    </script>
+</body>
+</html>

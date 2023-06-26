@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json </title>
+</head>
+<body>
+    <div class="container">
+        This is my container.
+    </div>
+
+    <script>
+        //object
+        let jsonobj={
+            name: "prerna",
+            clg: "Government polytechinc mumbai",
+            year: "second year",
+            food: "sandwich",
+        };
+        console.log(jsonobj);
+
+        //The stringify function is used to convert a valid JavaScript object into a string.
+        let jsonstr = JSON.stringify(jsonobj);
+        console.log(jsonstr);
+
+        //Once, this object is converted into a string, we can apply all the string functions to it. For example, if we want to replace prerna with yashodhar, then we can write as follows-
+
+        jsonstr= jsonstr.replace("prerna", "yashodhar")
+        console.log(jsonstr);
+
+        //convert a string into obj again.
+        let newjsonobj = JSON.parse(jsonstr);
+        console.log(newjsonobj);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<title>
+  pseduo selectors and designing
+</title>
+
+<head>
+  <style>
+    .container {
+      border: 4px solid blue;
+      background-color: chartreuse;
+      margin: 30px auto;
+      padding: 30px;
+      width: 666px;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: black;
+    }
+
+    /*Let us now see what Pseudo Selectors are. A pseudo class is used to define a special state of an element.Hover is used to change the color of text or background of a button as soon as you hover that part. The code for this is as below.*/
+    a:hover {
+      color: rgb(5, 0, 0);
+      background-color: rgb(236, 187, 72);
+    }
+   /* The next selector is Active. If you visit any button, and click it, it becomes active and showcases with different properties. The code for this is-*/
+    a:active{
+      background-color: coral;
+    }
+    /*The next Pseudo selector is Visited. As soon as you visit the anchor tag button and click the link mentioned, it changes its color. To apply this property, write the code as follows-*/
+    a:visited{
+     background-color: lightcyan;
+    }
+
+    .button {
+      
+      padding: 6px;
+      background-color: crimson;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+   /* Similarly we can put pseudo selector in the ‘btn’ class as well. To apply it write the code as */follows-
+
+    .button:hover{
+      border:2px soild black;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id=con1>
+    <h3>This is nmy heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Sit amet dolor itaque iste nihil ipsa doloribus excepturi aliquam. Id cum incidunt soluta eligendi ipsa
+      dignissimos nulla itaque sint hic dolorem.</p>
+    <a href="https://facebook.com" class="button">Read more</a>
+    <button class="button">Contact us</button>
+  </div>
+</body>
+
+</html>

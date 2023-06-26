@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        .container{
+           
+            text-align: center;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+        }
+        #clock {
+            font-size: 50px;
+            margin: 80px 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="clock"></span>
+    </div>
+
+    <script>
+
+
+        setInterval(clk, 1000);
+
+        function clk() {
+            //clock.innerHTML = new Date();
+            //     OR
+            let newdate = new Date();
+            // document.getElementById('clock').innerHTML=newdate;
+
+            let hr = newdate.getHours();
+            let mn = newdate.getMinutes();
+            let sc = newdate.getSeconds();
+
+            function check(i) {
+                if (i < 10) {
+                    i = ("0" + i);
+                } 
+                return i;
+            }
+            
+            document.getElementById('clock').innerHTML = `${(check(hr))}:${(check(mn))}:${(check(sc))}`;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

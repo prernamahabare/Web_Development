@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        // The HTML DOM (Document Object Model) is a standard object model and programming interface for HTML. It defines:
+
+        // The HTML elements as objects
+        // The properties of all HTML elements
+        // The methods to access all HTML elements
+        // The events for all HTML elements
+
+
+        // The most common way to access an HTML element is to use the id of the element.
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        // wever, we can also extract the elements from HTML with the help of class name. If we want to find all the elements with same class name, use getElementsByClassName().
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        // If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector()  method.It will return only first element of selector.
+
+        // let sel = document.querySelector('#nav>li');
+        // console.log("Selector returns ", sel)
+
+        // We can also use querySelectorAll() to target the elements. 
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("Selector returns ", sel)
+
+    </script>
+</body>
+
+</html>

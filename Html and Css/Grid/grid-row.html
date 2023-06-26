@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid </title>
+    <style>
+        .container {
+            display: grid;
+
+
+            /* The grid-template-rows property is used to divide the first, second, and third rows in given fractions. The other rows will be set as two times the normal size. It is done with the help of grid-auto-rows. The grid-gap is used to decide the gap between the two grids. Lastly, the grid-template-columns is used to decide the number of columns used in the grid. */
+            grid-template-rows: 2fr 4fr 5fr;
+            grid-auto-rows: 4fr;
+
+            /* However, till now if we notice, these grid systems are not responsive which may leave a bad user experience. Therefore, we can make the use of repeat function which will fix the number of columns in the grid as follows- */
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-columns: repeat(3, 150px);
+
+
+            row-gap: 2px;
+        }
+
+        .item {
+            color: white;
+            background-color: rgb(88, 87, 87);
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is a box-1</div>
+        <div class="item">This is a box-2</div>
+        <div class="item">This is a box-3</div>
+        <div class="item">This is a box-4</div>
+        <div class="item">This is a box-5</div>
+        <div class="item">This is a box-6</div>
+        <div class="item">This is a box-7</div>
+        <div class="item">This is a box-8</div>
+        <div class="item">This is a box-9</div>
+        <div class="item">This is a box-10</div>
+    </div>
+</body>
+
+</html>
